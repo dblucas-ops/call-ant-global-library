@@ -4,4 +4,4 @@ function add(numbers) {
         .map(x => parseInt(x))
         .reduce((a, b) => a + b)
 }
-exports.add = add;
+exports.add = add; 
