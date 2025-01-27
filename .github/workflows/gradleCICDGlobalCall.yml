@@ -14,5 +14,5 @@ jobs:
     with:
       callerRepo: call-gradle-global-library
       branchName: main
-      buildCmd: npm install
+      buildCmd: gradle -PmainClass=TestMain execute
     secrets: inherit
