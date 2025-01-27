@@ -1,5 +1,13 @@
 apply plugin: 'java'
 
+plugins {
+    id 'application'                
+}
+
+application {
+    mainClass = 'TestMain'  
+}
+
 repositories {
     jcenter()
 }
