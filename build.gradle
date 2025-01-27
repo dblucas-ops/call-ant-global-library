@@ -2,10 +2,6 @@ plugins {
     id 'java' 
 }
 
-application {
-    mainClass = 'TestMain'  
-}
-
 repositories {
     jcenter()
 }
