@@ -1,7 +1,7 @@
 apply plugin: 'java'
 
 plugins {
-    id 'application'                
+    id 'java'
 }
 
 application {
