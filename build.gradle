@@ -1,12 +1,25 @@
-plugins {
-    id 'java'
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'application'
+
+mainClassName = 'TestMain'
+
+repositories { 
+    mavenCentral() 
 }
 
-repositories {
-    jcenter()
+jar {
+    archiveBaseName = 'dbl-gradle'
+    archiveVersion =  '0.0.1'
 }
+// end::jar[]
 
-application {
-    mainClass = 'TestMain' 
+// tag::dependencies[]
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+dependencies {
+    implementation "joda-time:joda-time:2.2"
+    testImplementation "junit:junit:4.12"
 }
 
