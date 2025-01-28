@@ -14,5 +14,5 @@ jobs:
     with:
       callerRepo: call-ant-global-library
       branchName: main
-      buildCmd: gradle -PmainClass=TestMain
+      buildCmd: ant build.xml
     secrets: inherit
