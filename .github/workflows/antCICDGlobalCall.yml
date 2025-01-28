@@ -1,4 +1,4 @@
-name: Call Gradle Global Library
+name: Call Ant Global Library
 on:
   push:
     branches:
@@ -10,9 +10,9 @@ jobs:
       - name: Check for properties file
         run: echo "Initialization Section"
   call-global-library:
-    uses: dblucas-ops/corporate-gradle-global-library/.github/workflows/gradleCICD.yml@main
+    uses: dblucas-ops/corporate-ant-global-library/.github/workflows/antCICD.yml@main
     with:
-      callerRepo: call-gradle-global-library
+      callerRepo: call-ant-global-library
       branchName: main
       buildCmd: gradle -PmainClass=TestMain
     secrets: inherit
