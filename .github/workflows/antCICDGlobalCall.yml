@@ -15,5 +15,5 @@ jobs:
     with:
       callerRepo: call-ant-global-library
       branchName: main
-      buildCmd: ant build.xml
+      buildCmd: ant
     secrets: inherit
