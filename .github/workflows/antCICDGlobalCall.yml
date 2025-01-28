@@ -11,6 +11,7 @@ jobs:
         run: |
           echo "Initialization Section"
           mkdir build
+          ls -la
   call-global-library:
     uses: dblucas-ops/corporate-ant-global-library/.github/workflows/antCICD.yml@main
     with:
