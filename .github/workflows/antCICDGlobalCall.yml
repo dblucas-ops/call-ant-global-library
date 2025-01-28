@@ -8,7 +8,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check for properties file
-        run: echo "Initialization Section"
+        run: |
+          echo "Initialization Section"
+          mkdir build
   call-global-library:
     uses: dblucas-ops/corporate-ant-global-library/.github/workflows/antCICD.yml@main
     with:
